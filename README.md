@@ -26,7 +26,7 @@ User Service, and Authentication Service.
 
 Before you begin, ensure you have met the following requirements:
 
-- **Java Development Kit (JDK)**: Version 8 or higher.
+- **Java Development Kit (JDK)**: Version 17 or higher.
 - **Integrated Development Environment (IDE)**: We recommend using IntelliJ IDEA or Eclipse.
 - **Database**: Set up a compatible database system (e.g., MySQL, PostgreSQL) for user data storage.
 - **Docker**: Required for containerization and deployment.
@@ -51,7 +51,6 @@ Follow these steps to set up the development environment and run the project loc
 2. **Set Up Your Database**
 
     - Create a database schema for the microservices.
-
     - Configure database connection properties in the `application.yml` or `application.properties` files for each
       microservice.
 
@@ -96,44 +95,44 @@ The Authentication Service handles user authentication and JWT token generation.
 
   Detailed API documentation is available in the Authentication Service directory.
 
-Testing
+## Testing
 To run tests for the microservices, use the following commands:
 
-shell
-Copy code
 
-# Run tests for User Service
+### Run tests for User Service
+
 
 cd user-service
 mvn test
 
-# Run tests for Authentication Service
+### Run tests for Authentication Service
 
 cd auth-service
 mvn test
-Documentation
+
+## Documentation
 API documentation is generated using Swagger and can be accessed at http://localhost:8080/swagger-ui.html for each
 microservice.
 
-Deployment
+## Deployment
 For deployment, we recommend using Docker Compose to orchestrate the microservices and any required dependencies. A
 sample Docker Compose configuration file is provided in the project.
 
 To deploy the entire application, run:
 
-shell
-Copy code
 docker-compose up
+
 For production deployment, consider using container orchestration platforms like Kubernetes.
 
-Contributing
+## Contributing
 We welcome contributions to enhance this project. To contribute, follow these steps:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and commit them.
-Submit a pull request with a clear description of your changes.
-License
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Submit a pull request with a clear description of your changes.
+
+## License
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project according to
 the terms of the license.
 
