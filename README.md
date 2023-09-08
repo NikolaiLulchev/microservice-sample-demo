@@ -13,7 +13,6 @@
 - [Testing](#testing)
 - [Documentation](#documentation)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
 
 ## Introduction
 
@@ -130,15 +129,3 @@ docker-compose up
 ````
 
 For production deployment, consider using container orchestration platforms like Kubernetes.
-
-## Contributing
-
-We welcome contributions to enhance this project. To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Submit a pull request with a clear description of your changes.
-
-Thank you for using the Microservice Sample Project! If you have any questions, issues, or suggestions, please don't
-hesitate to reach out to us.
