@@ -14,7 +14,6 @@
 - [Documentation](#documentation)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -47,6 +46,7 @@ Follow these steps to set up the development environment and run the project loc
 
    ```shell
    git clone https://github.com/yourusername/microservice-sample.git
+   ```
 
 2. **Set Up Your Database**
 
@@ -96,45 +96,49 @@ The Authentication Service handles user authentication and JWT token generation.
   Detailed API documentation is available in the Authentication Service directory.
 
 ## Testing
-To run tests for the microservices, use the following commands:
 
+To run tests for the microservices, use the following commands:
 
 ### Run tests for User Service
 
-
-cd user-service
-mvn test
+```shell
+   cd user-service
+   mvn test
+   ```
 
 ### Run tests for Authentication Service
 
+```shell
 cd auth-service
 mvn test
+```
 
 ## Documentation
+
 API documentation is generated using Swagger and can be accessed at http://localhost:8080/swagger-ui.html for each
 microservice.
 
 ## Deployment
+
 For deployment, we recommend using Docker Compose to orchestrate the microservices and any required dependencies. A
 sample Docker Compose configuration file is provided in the project.
 
 To deploy the entire application, run:
 
+````shell
 docker-compose up
+````
 
 For production deployment, consider using container orchestration platforms like Kubernetes.
 
 ## Contributing
+
 We welcome contributions to enhance this project. To contribute, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and commit them.
 4. Submit a pull request with a clear description of your changes.
-
-## License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project according to
-the terms of the license.
 
 Thank you for using the Microservice Sample Project! If you have any questions, issues, or suggestions, please don't
 hesitate to reach out to us.
