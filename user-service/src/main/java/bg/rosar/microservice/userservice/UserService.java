@@ -15,12 +15,13 @@ public class UserService {
     }
 
     public List<UserDTO> getAllUsers() {
-        return userRepository.getAll().stream()
+        return userRepository.findAll().stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());
     }
 
     private UserDTO mapToDTO(User user) {
-        return new UserDTO(user.getEmail(), user.getFirstName(), user.getLastName());
+        return new UserDTO(user.getEmail(), user.getFirstName() + " " + user.getLastName());
     }
+
 }
